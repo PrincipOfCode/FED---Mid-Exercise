@@ -1,8 +1,10 @@
 body, header, main, footer,
 nav, aside, section, article, 
-ul, figcaption, form, label {
+ul, figcaption, figure, form, label {
     display: flex;
 }
+
+
 
 header, main, footer, nav, aside, 
 section, article, ul, li, a, p, 
@@ -41,8 +43,6 @@ body, body > header {
     align-items: center;
 }
 
-
-
 body > header, footer {
     width: 100%;
 }
@@ -72,9 +72,12 @@ body > header li a {
 
 }
 
+/* main */
+
 #index > main,
 #index > main > section {
     justify-content: space-between;
+    margin-bottom: 18px;;
 }
 
 #index > main > section > figure {
@@ -83,13 +86,14 @@ body > header li a {
     margin: 0;
     border-bottom-right-radius: 20px;
     background-size: cover;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
 
 
 
 figure.bg-image1 {
-    background: url("../img/Retail\ and\ trade.JPG") no-repeat center center;
-    
+    background: url("../img/Retail\ and\ trade.JPG") no-repeat center center; 
 }
 
 figure.bg-image2 {
@@ -101,7 +105,54 @@ figure.bg-image3 {
     background: url("../img/Industries\ and\ Services.jpg") no-repeat center center;
 }
 
+#index figure > figcaption {
+    margin: 5px;
+    height: 97px;
+    max-width: 248px;
+    background-color: rgba(144,144,144,0.8);
+    border-bottom-right-radius: 20px;
+    padding: 5px 10px;
+    box-sizing: border-box;  
+     
+}
 
+#index figure > figcaption > h3,
+#index figure > figcaption > p,
+#index figure > figcaption > a {    
+    color: white;
+    margin: 0;    
+}
+
+#index figure > figcaption > h3 {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: bold;
+}
+
+#index figure > figcaption > a ,
+#index figure > figcaption > p {
+    font-size: 13px;
+    line-height: 13px;
+}
+
+#index figure > figcaption > a {
+    text-align: left;
+    text-decoration: underline;
+    padding-top: 4px;
+}
+
+#index article {
+    border-top-right-radius: 20px;
+    border: 2px solid rgb(236,236,236);
+    background: rgb(236,236,236);
+    background: linear-gradient(0deg, rgba(236,236,236,1) 0%, rgba(254,254,254,1) 90%);
+    height: 216px;
+    max-width: 293px;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+/* footer */
 footer {
     position: fixed;
     bottom: 0px;
@@ -129,8 +180,6 @@ footer > ul > li:not(:first-child)::before {
     font-weight: bold;
     content: "|";
     position: absolute;
-
-
 }
 
 footer > ul > li > a {
