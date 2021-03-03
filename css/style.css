@@ -47,6 +47,12 @@ body > header, footer {
     width: 100%;
 }
 
+a {
+    text-decoration: none;
+    outline: none;
+    color: white;
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -82,10 +88,32 @@ footer > ul {
 
 footer > ul > li {
     flex: auto;
+    position: relative;
 }
 
-a {
-    text-decoration: none;
-    outline: none;
+footer > ul > li:not(:first-child)::before {
+    flex: auto;
     color: white;
+    font-size: 15px;
+    font-weight: bold;
+    content: "|";
+    position: absolute;
+
+
 }
+
+footer > ul > li > a {
+    padding: 0 10px;
+}
+
+#index footer li:last-child > a {
+    color: red;
+}
+
+footer a[href*="facebook"] {
+    display: inline-block;
+    background-image: url("/img/fb_icon.png");
+    padding: 9px;
+}
+
+
