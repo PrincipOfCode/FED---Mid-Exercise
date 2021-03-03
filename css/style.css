@@ -88,17 +88,17 @@ body > header li a {
 
 
 figure.bg-image1 {
-    background: url("/img/Retail\ and\ trade.JPG") no-repeat center center;
+    background: url("../img/Retail\ and\ trade.JPG") no-repeat center center;
     
 }
 
 figure.bg-image2 {
-    background: url("/img/Refining.jpg") no-repeat center center;
+    background: url("../img/Refining.jpg") no-repeat center center;
 }
 
 
 figure.bg-image3 {
-    background: url("/img/Industries\ and\ Services.jpg") no-repeat center center;
+    background: url("../img/Industries\ and\ Services.jpg") no-repeat center center;
 }
 
 
@@ -143,6 +143,6 @@ footer > ul > li > a {
 
 footer a[href*="facebook"] {
     display: inline-block;
-    background-image: url("/img/fb_icon.png");
+    background-image: url("../img/fb_icon.png");
     padding: 9px;
 }
