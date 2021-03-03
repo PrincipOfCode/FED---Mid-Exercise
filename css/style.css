@@ -1,0 +1,18 @@
+body {
+    direction: rtl;
+    text-align: right;
+}
+
+body, header, main, footer,
+nav, aside, section, article, 
+ul, figcaption, form, label {
+    display: flex;
+}
+
+header, main, footer,
+nav, aside, section, article, 
+ul, li, a, p, h1, h2, h3, span, 
+figcaption, form, label, input, 
+textarea, button {
+    flex:auto;
+}
