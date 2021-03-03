@@ -1,6 +1,7 @@
 body, header, main, footer,
 nav, aside, section, article, 
-ul, figcaption, figure, form, label {
+ul, figcaption, figure, form, 
+label, div {
     display: flex;
 }
 
@@ -36,6 +37,7 @@ body {
     direction: rtl;
     text-align: right;
     margin: 0px;
+    padding-bottom: 5px;
     font-family: 'Arial (Hebrew)', Arial;
 }
 
@@ -152,6 +154,57 @@ figure.bg-image3 {
     box-sizing: border-box;
 }
 
+
+
+#index article > h3 {
+    padding: 0 4px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 34px;
+    color: #575757;
+    margin: 0px;
+    height: 34px;
+    flex: 0;
+    border-bottom: inset;
+}
+
+#index article a {
+    color: #72716d;
+    text-decoration: underline;
+    align-self: flex-end;
+}
+
+#index figure > figcaption > a,
+#index article a  {
+    position: relative;
+    padding-left: 10px;
+}
+
+#index figure > figcaption > a > span:after,
+#index article a > span:after {
+    content:"";
+    position: absolute;
+    display: block;
+    
+    left: 0;
+    top: 6px;
+    width: 8px;
+    height: 9px;
+}
+
+#index figure > figcaption > a > span:after {
+    background-image: url("/img/read_more_white.png");
+}
+
+#index article a > span:after {
+    background-image: url("/img/read_more_yellow.png");   
+}
+
+#index article > img {
+    margin: 15px 0;
+}
+
+
 /* footer */
 footer {
     position: fixed;
@@ -194,4 +247,17 @@ footer a[href*="facebook"] {
     display: inline-block;
     background-image: url("../img/fb_icon.png");
     padding: 9px;
+}
+
+/*  */
+
+#index figure > figcaption > a:hover,
+#index article a:hover, a:hover {
+    color: #005ca0;
+    text-decoration: underline;
+}
+
+#index figure > figcaption > a:hover > span:after,
+#index article a:hover > span:after {
+    background-image: url("/img/read_more_blue.png");       
 }
