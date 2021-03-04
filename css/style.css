@@ -193,11 +193,11 @@ figure.bg-image3 {
 }
 
 #index figure > figcaption > a > span:after {
-    background-image: url("/img/read_more_white.png");
+    background-image: url("../img/read_more_white.png");
 }
 
 #index article a > span:after {
-    background-image: url("/img/read_more_yellow.png");   
+    background-image: url("../img/read_more_yellow.png");   
 }
 
 #index article > img {
@@ -259,5 +259,29 @@ footer a[href*="facebook"] {
 
 #index figure > figcaption > a:hover > span:after,
 #index article a:hover > span:after {
-    background-image: url("/img/read_more_blue.png");       
+    background-image: url("../img/read_more_blue.png");       
 }
+
+article.slide-show img {
+    animation: change-pic 20s steps(4, start) 20s infinite both;     
+}
+
+@keyframes change-pic {
+    /* You could think of as "step 1" */
+    0% {
+        content:url("../img/Yellow\ click\ and\ pick\ 1.jpg");
+    }
+    /* You could think of as "step 2" */
+    25% {
+        content:url("../img/Yellow\ click\ and\ pick\ 2.jpg");
+    }
+    /* You could think of as "step 3" */
+    50% {
+        content:url("../img/Yellow\ click\ and\ pick\ 3.jpg");
+    }
+    /* You could think of as "step 4" */
+    75% {
+        content:url("../img/Yellow\ click\ and\ pick\ 4.jpg");
+    }
+             
+  }
