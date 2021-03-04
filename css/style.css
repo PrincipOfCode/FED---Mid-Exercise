@@ -95,7 +95,7 @@ body > header li a {
 
 
 figure.bg-image1 {
-    background: url("../img/Retail\ and\ trade.JPG") no-repeat center center; 
+    background: url("../img/Retail_and_trade.jpg") no-repeat center center; 
 }
 
 figure.bg-image2 {
@@ -104,7 +104,7 @@ figure.bg-image2 {
 
 
 figure.bg-image3 {
-    background: url("../img/Industries\ and\ Services.jpg") no-repeat center center;
+    background: url("../img/Industries_and_Services.jpg") no-repeat center center;
 }
 
 #index figure > figcaption {
@@ -269,19 +269,19 @@ article.slide-show img {
 @keyframes change-pic {
     /* You could think of as "step 1" */
     0% {
-        content:url("../img/Yellow\ click\ and\ pick\ 1.jpg");
+        content:url("../img/Yellow_click_and_pick_1.jpg");
     }
     /* You could think of as "step 2" */
     25% {
-        content:url("../img/Yellow\ click\ and\ pick\ 2.jpg");
+        content:url("../img/Yellow_click_and_pick_2.jpg");
     }
     /* You could think of as "step 3" */
     50% {
-        content:url("../img/Yellow\ click\ and\ pick\ 3.jpg");
+        content:url("../img/Yellow_click_and_pick_3.jpg");
     }
     /* You could think of as "step 4" */
     75% {
-        content:url("../img/Yellow\ click\ and\ pick\ 4.jpg");
+        content:url("../img/Yellow_click_and_pick_4.jpg");
     }
              
   }
