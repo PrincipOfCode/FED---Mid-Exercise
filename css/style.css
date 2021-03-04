@@ -222,12 +222,12 @@ footer > ul {
 }
 
 footer > ul > li {
-    flex: auto;
+    flex: 0 0 auto;
     position: relative;
 }
 
 footer > ul > li:not(:first-child)::before {
-    flex: auto;
+    flex: 0 0 auto;
     color: white;
     font-size: 15px;
     font-weight: bold;
@@ -236,7 +236,7 @@ footer > ul > li:not(:first-child)::before {
 }
 
 footer > ul > li > a {
-    padding: 0 10px;
+    padding: 0 8px 0 7px;
 }
 
 #index footer li:last-child > a {
@@ -247,6 +247,7 @@ footer a[href*="facebook"] {
     display: inline-block;
     background-image: url("../img/fb_icon.png");
     padding: 9px;
+    margin-left: 5px;
 }
 
 /*  */
@@ -272,15 +273,15 @@ article.slide-show img {
         content:url("../img/Yellow_click_and_pick_1.jpg");
     }
     /* You could think of as "step 2" */
-    25% {
+    33% {
         content:url("../img/Yellow_click_and_pick_2.jpg");
     }
     /* You could think of as "step 3" */
-    50% {
+    66% {
         content:url("../img/Yellow_click_and_pick_3.jpg");
     }
     /* You could think of as "step 4" */
-    75% {
+    100% {
         content:url("../img/Yellow_click_and_pick_4.jpg");
     }
              
