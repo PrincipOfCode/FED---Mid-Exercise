@@ -296,10 +296,15 @@ figure.bg-image3 {
 
 #index article > div {
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 #index article > div > ul {
     flex: 0;
+}
+
+#index article > div > ul > li {
+    padding: 0.2em;
 }
 
 #index article > img {
