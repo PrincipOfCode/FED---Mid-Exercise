@@ -1,7 +1,7 @@
 body, header, main, footer,
 nav, aside, section, article, 
 ul, figcaption, figure, form, 
-label, div {
+label, div, li {
     display: flex;
 }
 
@@ -37,6 +37,7 @@ body {
     direction: rtl;
     text-align: right;
     margin: 0px;
+    line-height: 1;
     padding-bottom: 5px;
     font-family: 'Arial (Hebrew)', Arial;
 }
@@ -67,11 +68,54 @@ body > header {
     margin-bottom: 30px;
 }
 
+body > header > ul > li {
+    flex-direction: row-reverse;
+    align-items: center;    
+    padding-inline-start: 1em;
+}
+
+body > header > ul > li > a {
+    flex: 0;
+    
+}
+
+
+
 body > header li a {
     font-size: 15px;
     font-weight: bold;
 
 
+}
+
+#search-box {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    align-items: center;
+}
+#search-box label {
+    display: flex;
+    flex: 1 1 auto;
+    width: 100%;
+}
+
+#search-input {
+    width: 132px;
+    height: 19px;
+    border-radius: 0 0.5em 0 0;
+    border: none;
+    padding: 0 0.5em;
+    box-sizing: border-box;
+    margin-inline-end: 1px;
+    outline: none;
+}
+
+#search-box a {
+    width: 19px;
+    height: 19px;
+    flex: 0 0 auto;
+    background-image: url("../img/search_button.png");
 }
 
 /* main */
